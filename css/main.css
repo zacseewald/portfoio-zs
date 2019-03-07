@@ -1,0 +1,158 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#border-box {
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  z-index: 1000;
+  width: 80%;
+  text-align: center;
+}
+
+svg {
+  font-size: 10em;
+  text-transform: uppercase;
+  -webkit-transition: 1s font-size;
+  transition: 1s font-size;
+  font-family: 'Libre Franklin', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+video {
+  height: 100vh;
+  width: 100vw;
+}
+
+svg rect {
+  fill: white;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+
+svg > rect {
+  fill: url(#my-cool-gradient);
+}
+
+#color-one {
+  stop-color: #447799;
+}
+
+#color-two {
+  stop-color: #112266;
+}
+
+@-webkit-keyframes topFadeIn {
+  0% {
+    font-size: 1.5em;
+    color: #ff006a;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: silver;
+    font-size: 1.7em;
+  }
+}
+
+@keyframes topFadeIn {
+  0% {
+    font-size: 1.5em;
+    color: #ff006a;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: silver;
+    font-size: 1.7em;
+  }
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 75%;
+  left: 65%;
+  font-size: 1.7em;
+  color: silver;
+  -webkit-animation-name: topFadeIn;
+          animation-name: topFadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  svg {
+    font-size: 6em;
+    font-weight: bolder;
+  }
+  #text-one {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  #text-two {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+  video {
+    height: 100vh;
+  }
+  p {
+    position: absolute;
+    top: 63%;
+    left: 55%;
+    font-size: 1.7em;
+    color: silver;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  svg {
+    font-size: 6em;
+    font-weight: bolder;
+  }
+  #text-one {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  #text-two {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  video {
+    height: 100vh;
+  }
+  p {
+    position: absolute;
+    top: 63%;
+    left: 45%;
+    font-size: 1.7em;
+    color: silver;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  svg {
+    font-size: 4em;
+    font-weight: bolder;
+  }
+  #text-one {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
+  }
+  #text-two {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+  video {
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */
