@@ -18,7 +18,7 @@ Along with the clip-mask, it also shows how to use a gradient as a fill for the 
 Designed for desktop.
 
 ### Purpose
-- To further my understaning of svg uses and applying masks for css design.
+- To further my understanding of svg uses and applying masks for css design.
 - Because it's cool, and I can...
 
 ### Future
